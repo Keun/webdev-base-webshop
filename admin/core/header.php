@@ -1,5 +1,5 @@
 <?php
-    include('../core/db_connect.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/webdev-base-webshop/core/db_connect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
