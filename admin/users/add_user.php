@@ -18,6 +18,7 @@
             $liqry->bind_param('s',$email);
             if($liqry->execute()){
                 echo "admin user met email " . $email . " toegevoegd.";
+                
             }
         }
         $liqry->close();

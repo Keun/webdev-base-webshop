@@ -6,10 +6,11 @@ Homepage
 <h2>Categorie overzicht</h2>
 <?php
 $sql = "SELECT name, description FROM category WHERE active = 1";
+
 $liqry = $con->prepare($sql);
 if($liqry === false) {
     echo mysqli_error($con);
-} else{
+}else{
     // $liqry->bind_param('s',$email);
     $liqry->bind_result($categoryName, $categoryDescription);
     if($liqry->execute()){
